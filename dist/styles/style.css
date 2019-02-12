@@ -142,7 +142,7 @@ main section {
         margin: 3px 0;
         font-size: .9rem; }
 
-@media (min-width: 321px) {
+@media (min-width: 658px) {
   .list .list-group {
     width: 50%; } }
 
@@ -235,7 +235,7 @@ header {
 .background img {
   display: block;
   width: 80%;
-  max-width: 648px;
+  max-width: 960px;
   height: auto;
   margin: 0 auto; }
 
@@ -252,6 +252,8 @@ header {
     font-size: 1.1rem; }
     .featured-projects a:hover {
       color: #f2c300; }
+  .featured-projects .list .list-group {
+    margin-bottom: -1rem; }
 
 .experience .jobs .job {
   margin-bottom: 24px; }

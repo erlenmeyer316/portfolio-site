@@ -1,0 +1,131 @@
+header {
+  padding: 0px 50px;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background:
+          linear-gradient(
+                          rgba(0, 153, 246, .75),
+                          rgba(0, 153, 246, .75)
+          ),
+          url('../assets/backgrounds/cheap_diagonal_fabric.png');
+  background-repeat: repeat;
+
+  .greetings {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    max-width: 58.33rem;
+    font-size: 1.5rem;
+
+    .me {
+      font-weight: 700;
+      display: inline;
+    }
+  }
+
+  .contact {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .scroll {
+    display: none;
+    padding-bottom: 24px;
+
+    a span {
+      position: absolute;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb07 2s infinite;
+      animation: sdb07 2s infinite;
+      opacity: 0;
+      box-sizing: border-box;
+    }
+
+    a span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+
+    a span:nth-of-type(2) {
+      margin-top: 16px;
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s;
+    }
+
+    a span:nth-of-type(3) {
+      display:none;
+      margin-top: 32px;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s;
+    }
+  }
+
+
+
+}
+
+
+
+
+@include media(">=tablet") {
+  header {
+    padding: 0px 100px;
+    text-align: left;
+
+    .greetings {
+      font-size: 2.5rem;
+
+      .emoji {
+        vertical-align: text-top;
+      }
+
+    }
+
+    .subtext {
+      font-size: 2.5rem;
+    }
+
+    .contact {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .scroll {
+      display: block;
+    }
+  }
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

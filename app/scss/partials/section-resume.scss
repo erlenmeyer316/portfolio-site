@@ -1,0 +1,22 @@
+.resume {
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #0099f6;
+  margin-top: 1rem;
+
+  &:after {
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url(../assets/arrow.png) no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+}

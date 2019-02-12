@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300; }
+
+p {
+  margin-bottom: 24px; }
+
+h3 {
+  font-weight: 700; }
+
+.bold {
+  font-weight: 700; }
+
+body {
+  background-color: #fff; }
+
+.color-trek-red {
+  color: #df0000; }
+
+.bgcolor-trek-red {
+  background-color: #df0000; }
+
+.color-trek-gold {
+  color: #f2c300; }
+
+.bgcolor-trek-gold {
+  background-color: #f2c300; }
+
+.color-trek-blue {
+  color: #0099f6; }
+
+.bgcolor-trek-blue {
+  background-color: #0099f6; }
+
+.color-trek-green {
+  color: #00b844; }
+
+.bgcolor-trek-green {
+  background-color: #00b844; }
+
+.color-trek-grey {
+  color: #b6b6b6; }
+
+.bgcolor-trek-grey {
+  background-color: #b6b6b6; }
+
+.color-trek-dark-grey {
+  color: #4d4b4b; }
+
+.bgcolor-trek-dark-grey {
+  background-color: #4d4b4b; }
+
+.color-black {
+  color: #000000; }
+
+.color-white {
+  color: #ffffff; }
+
+.emoji {
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px; }
+
+.emoji-vulcan {
+  background-image: url(../assets/emoji/live-long-and-prosper.png); }
+
+.emoji-communicator {
+  background-image: url(../assets/emoji/communicator.svg); }
+
+main section {
+  display: flex;
+  padding: 24px 50px;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 1rem; }
+  main section h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #df0000; }
+
+.list {
+  display: flex;
+  flex-wrap: wrap; }
+  .list .list-group {
+    width: 100%; }
+    .list .list-group h3 {
+      font-weight: 700; }
+    .list .list-group ul {
+      margin-bottom: 1rem;
+      list-style: none; }
+      .list .list-group ul li {
+        margin: 3px 0;
+        font-size: .9rem; }
+
+@media (min-width: 321px) {
+  .list .list-group {
+    width: 50%; } }
+
+@media (min-width: 768px) {
+  .list .list-group {
+    width: 25%; } }
+
+header {
+  padding: 0px 50px;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(rgba(0, 153, 246, 0.75), rgba(0, 153, 246, 0.75)), url("../assets/backgrounds/cheap_diagonal_fabric.png");
+  background-repeat: repeat; }
+  header .greetings {
+    font-weight: 300;
+    font-size: 1.5rem; }
+  header .subtext {
+    max-width: 58.33rem;
+    font-size: 1.5rem; }
+    header .subtext .me {
+      font-weight: 700;
+      display: inline; }
+  header .contact {
+    font-weight: 400;
+    font-size: 1rem; }
+  header .scroll {
+    display: none;
+    padding-bottom: 24px; }
+    header .scroll a span {
+      position: absolute;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb07 2s infinite;
+      animation: sdb07 2s infinite;
+      opacity: 0;
+      box-sizing: border-box; }
+    header .scroll a span:nth-of-type(1) {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s; }
+    header .scroll a span:nth-of-type(2) {
+      margin-top: 16px;
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s; }
+    header .scroll a span:nth-of-type(3) {
+      display: none;
+      margin-top: 32px;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s; }
+
+@media (min-width: 768px) {
+  header {
+    padding: 0px 100px;
+    text-align: left; }
+    header .greetings {
+      font-size: 2.5rem; }
+      header .greetings .emoji {
+        vertical-align: text-top; }
+    header .subtext {
+      font-size: 2.5rem; }
+    header .contact {
+      font-size: 1.25rem;
+      font-weight: 400; }
+    header .scroll {
+      display: block; } }
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.background img {
+  display: block;
+  width: 80%;
+  max-width: 648px;
+  height: auto;
+  margin: 0 auto; }
+
+.skills .list .list-group {
+  margin-bottom: -1rem; }
+
+.featured-projects {
+  background-color: #4d4b4b;
+  color: #ffffff; }
+  .featured-projects a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 1.1rem; }
+    .featured-projects a:hover {
+      color: #f2c300; }
+
+.experience .jobs .job {
+  margin-bottom: 24px; }
+  .experience .jobs .job .employer {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4d4b4b; }
+  .experience .jobs .job .position {
+    font-weight: 700;
+    font-size: .9rem; }
+  .experience .jobs .job .dates {
+    font-weight: 300;
+    font-size: .8rem;
+    font-family: 'Inconsolata', sans-serif;
+    color: #b6b6b6; }
+
+.resume a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #0099f6;
+  margin-top: 1rem; }
+  .resume a:after {
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url(../assets/arrow.png) no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle; }

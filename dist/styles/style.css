@@ -234,7 +234,7 @@ header {
 
 .background img {
   display: block;
-  width: 80%;
+  width: 100%;
   max-width: 960px;
   height: auto;
   margin: 0 auto; }
@@ -251,7 +251,8 @@ header {
     font-weight: 700;
     font-size: 1.1rem; }
     .featured-projects a:hover {
-      color: #f2c300; }
+      color: #0099f6;
+      text-decoration: underline; }
   .featured-projects .list .list-group {
     margin-bottom: -1rem; }
 
